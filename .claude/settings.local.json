@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(docker-compose:*)",
+      "Bash(curl:*)",
+      "Bash(\"E:/FREELANCE/NLC Global/NLCSites/harris-cars-agent/.gitignore\":*)"
+    ]
+  }
+}
