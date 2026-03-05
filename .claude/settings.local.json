@@ -3,7 +3,11 @@
     "allow": [
       "Bash(docker-compose:*)",
       "Bash(curl:*)",
-      "Bash(\"E:/FREELANCE/NLC Global/NLCSites/harris-cars-agent/.gitignore\":*)"
+      "Bash(\"E:/FREELANCE/NLC Global/NLCSites/harris-cars-agent/.gitignore\":*)",
+      "Bash(\"E:/FREELANCE/NLC Global/NLCSites/harris-cars-agent/Dockerfile\":*)",
+      "Bash(\"E:/FREELANCE/NLC Global/NLCSites/harris-cars-agent/docker/render/supervisord.conf\":*)",
+      "Bash(\"E:/FREELANCE/NLC Global/NLCSites/harris-cars-agent/docker/render/start.sh\":*)",
+      "Bash(\"E:/FREELANCE/NLC Global/NLCSites/harris-cars-agent/render.yaml\":*)"
     ]
   }
 }
