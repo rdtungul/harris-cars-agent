@@ -3,6 +3,9 @@ set -e
 
 cd /var/www/html
 
+echo "==> Clearing config cache..."
+php artisan config:clear
+
 echo "==> Generating app key if not set..."
 if [ -z "$APP_KEY" ]; then
     php artisan key:generate --force
