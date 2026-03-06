@@ -8,7 +8,9 @@
       "Bash(\"E:/FREELANCE/NLC Global/NLCSites/harris-cars-agent/docker/render/supervisord.conf\":*)",
       "Bash(\"E:/FREELANCE/NLC Global/NLCSites/harris-cars-agent/docker/render/start.sh\":*)",
       "Bash(\"E:/FREELANCE/NLC Global/NLCSites/harris-cars-agent/render.yaml\":*)",
-      "Bash(\"E:/FREELANCE/NLC Global/NLCSites/harris-cars-agent/vite.config.js\":*)"
+      "Bash(\"E:/FREELANCE/NLC Global/NLCSites/harris-cars-agent/vite.config.js\":*)",
+      "Bash(docker-compose exec:*)",
+      "Bash(sed:*)"
     ]
   }
 }
