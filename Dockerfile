@@ -31,11 +31,14 @@ WORKDIR /var/www/html
 # Copy composer files first (better Docker caching)
 COPY composer.json composer.lock ./
 
-# Install PHP dependencies
-RUN composer install --no-dev --optimize-autoloader --no-interaction
+# Install PHP dependencies without running scripts (app files not copied yet)
+RUN composer install --no-dev --no-scripts --no-interaction
 
 # Copy the rest of the application
 COPY . .
+
+# Re-dump autoload with app files present so post-autoload-dump scripts work
+RUN composer dump-autoload --no-dev --optimize --no-interaction
 
 # Install frontend dependencies and build assets
 RUN npm install && npm run build
