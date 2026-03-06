@@ -10,15 +10,18 @@ class UserSeeder extends Seeder
 {
     public function run(): void
     {
+        $email    = env('ADMIN_EMAIL', 'admin@harriscars.com');
+        $password = env('ADMIN_PASSWORD', 'password');
+
         User::updateOrCreate(
-            ['email' => 'admin@harriscars.com'],
+            ['email' => $email],
             [
-                'name'     => 'Harris Admin',
-                'password' => Hash::make('password'),
+                'name'     => env('ADMIN_NAME', 'Harris Admin'),
+                'password' => Hash::make($password),
                 'role'     => 'admin',
             ]
         );
 
-        $this->command->info('Admin user created: admin@harriscars.com / password');
+        $this->command->info("Admin user created: {$email}");
     }
 }
